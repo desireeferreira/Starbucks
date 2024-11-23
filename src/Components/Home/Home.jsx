@@ -3,7 +3,6 @@ import { MainStyle, Copo, Section } from "./style";
 
 export default function Home() {
   const [corSelecionada, setCorSelecionada] = useState("laranja");
-
   return (
     <MainStyle>
       <section>
@@ -19,36 +18,33 @@ export default function Home() {
         </p>
         <button>SAIBA MAIS</button>
         <div>
-          
-          <img
-            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copoamarelop.png"
-            alt="Copo pequeno amarelo"
-            onClick={() => setCorSelecionada("amarelo")}
-          />
+           <img
+            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copolaranjap.png"
+            alt="Copo pequeno laranja"
+            onClick={() => setCorSelecionada("laranja")}
+          />          
           <img
             src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copovermelhop.png"
             alt="Copo pequeno vermelho"
             onClick={() => setCorSelecionada("vermelho")}
+           />           
+           <img
+            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copoamarelop.png"
+            alt="Copo pequeno amarelo"
+            onClick={() => setCorSelecionada("amarelo")}
           />
-          <img
-            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copolaranjap.png"
-            alt="Copo pequeno laranja"
-            onClick={() => setCorSelecionada("laranja")}
-          />
-        </div>
+         </div>
       </section>
-
-      <Section>
+      <Section>        
         <Copo
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copo${corSelecionada}g.png`}
           alt={`Copo ${corSelecionada} grande`}
         />
-
         <img
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/ellipse${corSelecionada}.png`}
           alt={`Elipse ${corSelecionada}`}
         />
-      </Section>
+        </Section>
     </MainStyle>
   );
 }
