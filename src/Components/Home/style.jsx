@@ -5,7 +5,7 @@ export const MainStyle = styled.main`
   justify-content: space-between;
   align-items: center;
   height: 80vh;
-  padding: 0 5%;  
+   /* padding: 0 5%;    */
   h2 {
     font-size: 64px;
     color: #333;
@@ -15,11 +15,10 @@ export const MainStyle = styled.main`
   h1 {
     font-size: 20px;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
     line-height: 1.3;
     span {
       color: #00754a; 
-      font-weight: bold;
       font-size: 96px;
     }
   }
@@ -27,8 +26,9 @@ export const MainStyle = styled.main`
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     color: #666;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+    line-height: 1.5; 
+     margin-bottom: 1.5rem; 
+    
   }
 
   button {
@@ -52,7 +52,7 @@ export const MainStyle = styled.main`
     margin-top: 1.5rem;
     display: flex;
     gap: 0.8rem;
-    position: relative;
+    position: absolute;
     left: -30px;
     img {
       width: 100px;
@@ -68,8 +68,8 @@ export const MainStyle = styled.main`
 
 export const Copo = styled.img`
   width: 340px;
-  position: relative;
-  margin-right: -205px;
+  position: absolute;
+  margin-right: -205;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -81,11 +81,11 @@ export const Section = styled.section`
   position: relative;
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   z-index: -5;
 
-  .ellipse {
+  .elipse {
     position: absolute;    
     width: 800px;
     z-index: -1;

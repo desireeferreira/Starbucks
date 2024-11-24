@@ -40,7 +40,7 @@ export default function Home() {
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copo${corSelecionada}g.png`}
           alt={`Copo ${corSelecionada} grande`}
         />
-        <img
+        <img 
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/ellipse${corSelecionada}.png`}
           alt={`Elipse ${corSelecionada}`}
         />
