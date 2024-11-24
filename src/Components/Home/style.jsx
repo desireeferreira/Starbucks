@@ -3,32 +3,36 @@ import styled from "styled-components";
 export const MainStyle = styled.main`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   height: 80vh;
-   /* padding: 0 5%;    */
+  padding: 0 5rem;  
+  overflow: hidden;
+
   h2 {
-    font-size: 64px;
+    font-size: 40px;
     color: #333;
     margin-bottom: 1rem;
     font-family: 'Inter', sans-serif;
   }
+  
   h1 {
     font-size: 20px;
     color: #333;
-    margin-bottom: 1rem; 
+    margin: 1rem;
     line-height: 1.3;
     span {
-      color: #00754a; 
-      font-size: 96px;
+      color: #00754a;
+      font-size: 70px;
     }
   }
+
   p {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    width: 70%;
     color: #666;
-    line-height: 1.5; 
-     margin-bottom: 1.5rem; 
-    
+    line-height: 1.3; 
+    margin: 1.5rem;
   }
 
   button {
@@ -48,14 +52,16 @@ export const MainStyle = styled.main`
     &:active {
       transform: scale(0.98);
     }
-  }  div {
-    margin-top: 1.5rem;
+  }
+
+  div {
     display: flex;
     gap: 0.8rem;
     position: absolute;
-    left: -30px;
-    img {
-      width: 100px;
+    right: 650px;
+
+    img {  
+      width: 150%;
       cursor: pointer;
       transition: transform 0.3s ease;
 
@@ -64,12 +70,12 @@ export const MainStyle = styled.main`
       }
     }
   }
- `;
+`;
 
 export const Copo = styled.img`
   width: 340px;
   position: absolute;
-  margin-right: -205;
+  margin-left: -150px;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -77,19 +83,21 @@ export const Copo = styled.img`
   }
 `;
 
+export const elipse = styled.img`
+  position: absolute;
+  width: 450px;
+  z-index: 1; /* Colocando a elipse atrás do copo */
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: visible;
+  transition: transform 0.3s ease;
+`;
+
 export const Section = styled.section`
   position: relative;
   width: 50%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  z-index: -5;
-
-  .elipse {
-    position: absolute;    
-    width: 800px;
-    z-index: -1;
-    bottom: -50px;
-    right: -50%;
-    transition: background-color 0.3s ease;
-    }`;
+  z-index: 5;
+`; 

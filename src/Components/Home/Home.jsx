@@ -40,9 +40,9 @@ export default function Home() {
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copo${corSelecionada}g.png`}
           alt={`Copo ${corSelecionada} grande`}
         />
-        <img 
+        <elipse
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/ellipse${corSelecionada}.png`}
-          alt={`Elipse ${corSelecionada}`}
+          alt={`elipse ${corSelecionada}`}
         />
         </Section>
     </MainStyle>
