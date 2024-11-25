@@ -62,7 +62,6 @@ export const MainStyle = styled.main`
     position: absolute;
     right: 600px;
     top: 400px;
-    border: #005c37 solid;
     img {  
       width: 150%;
       cursor: pointer;
@@ -81,16 +80,13 @@ export const Copo = styled.img`
   margin-right: 40px;
   top: 18%;
   transition: transform 0.3s ease;
-  border: blue solid;
-
-
+  
   &:hover {
     transform: rotate(-5deg) scale(1.05);
   }
 `;
 
 export const Elipse = styled.img`
-  border: yellow solid;
   position: absolute;
   width: 700px;
   z-index: 1; 
@@ -103,7 +99,6 @@ export const Elipse = styled.img`
 
 export const Section = styled.section`
   position: relative;
-  border: pink solid; 
   display: flex;
   justify-content: center;
   align-items: flex-end;
