@@ -1,4 +1,4 @@
-import loja from "../../assets/image/grao.png"
+import loja from "../../assets/image/grao.png";
 import { Section, Div, Button } from "./style";
 
 export default function Novidades() {
@@ -12,8 +12,8 @@ export default function Novidades() {
             <Button>SAIBA MAIS</Button>
             </Div>
             <div>
-                <img src= "../../assets/image/grao.png" alt="Grão de café" />
+                <img src= {loja} alt="Grão de café" />
             </div>
             </Section>
-    )
+    );
 }
