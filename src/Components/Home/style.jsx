@@ -7,11 +7,13 @@ export const MainStyle = styled.main`
   height: 80vh;
   padding: 0 5rem;  
   overflow: hidden;
+  position: absolute;
 
   h2 {
     font-size: 40px;
     color: #333;
     margin-bottom: 1rem;
+    line-height: 1%;
     font-family: 'Inter', sans-serif;
   }
   
@@ -29,7 +31,7 @@ export const MainStyle = styled.main`
   p {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    width: 70%;
+    width: 90%;
     color: #666;
     line-height: 1.3; 
     margin: 1.5rem;
@@ -58,8 +60,9 @@ export const MainStyle = styled.main`
     display: flex;
     gap: 0.8rem;
     position: absolute;
-    right: 650px;
-
+    right: 600px;
+    top: 400px;
+    border: #005c37 solid;
     img {  
       width: 150%;
       cursor: pointer;
@@ -75,8 +78,11 @@ export const MainStyle = styled.main`
 export const Copo = styled.img`
   width: 340px;
   position: absolute;
-  margin-left: -150px;
+  margin-right: 40px;
+  top: 18%;
   transition: transform 0.3s ease;
+  border: blue solid;
+
 
   &:hover {
     transform: rotate(-5deg) scale(1.05);
@@ -84,20 +90,26 @@ export const Copo = styled.img`
 `;
 
 export const Elipse = styled.img`
+  border: yellow solid;
   position: absolute;
-  width: 450px;
-  z-index: 1; /* Colocando a elipse atrás do copo */
-  left: 50%;
-  transform: translateX(-50%);
+  width: 700px;
+  z-index: 1; 
+  right: 0%;
+  transform: translateY(-50%);
+  top:60%;
   visibility: visible;
   transition: transform 0.3s ease;
 `;
 
 export const Section = styled.section`
   position: relative;
-  width: 50%;
+  border: pink solid; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+   width: 300%;
+  height: 100%;
+  margin-top: 60px;
+  left:180px;
   z-index: 5;
 `; 

@@ -1,9 +1,45 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { MainStyle, Copo, Section } from "./style";
 
+import copolaranjap from "../../assets/image/copolaranjap.png";
+import copovermelhop from "../../assets/image/copovermelhop.png";
+import copoamarelop from "../../assets/image/copoamarelop.png";
+import copolaranjag from "../../assets/image/copolaranjag.png";
+import copovermelhog from "../../assets/image/copovermelhog.png";
+import copoamarelog from "../../assets/image/copoamarelog.png";
+import sound from "../..//assets/sounds/drink.wav"
+
+import elipselaranja from "../../assets/image/elipselaranja.png";
+import elipsevermelha from "../../assets/image/elipsevermelha.png";
+import elipseamarela from "../../assets/image/elipseamarela.png";
+
 export default function Home() {
-  const [corSelecionada, setCorSelecionada] = useState ("laranja");
+  const [corSelecionada, setCorSelecionada] = useState("laranja");
+
   
+  const coposPequenos = {
+    laranja: copolaranjap,
+    vermelho: copovermelhop,
+    amarelo: copoamarelop,
+  };
+
+  const coposGrandes = {
+    laranja: copolaranjag,
+    vermelho: copovermelhog,
+    amarelo: copoamarelog,
+  };
+
+  const tocarSom = () => {
+    const audio = new Audio(sound);
+    audio.play();
+  };
+
+  const elipses = {
+    laranja: elipselaranja, 
+    vermelho: elipsevermelha,
+    amarelo: elipseamarela,
+  };
+
   return (
     <MainStyle>
       <section>
@@ -19,33 +55,41 @@ export default function Home() {
         </p>
         <button>SAIBA MAIS</button>
         <div>
-           <img
-            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copolaranjap.png"
-            alt="Copo pequeno laranja"
-            onClick={() => setCorSelecionada("laranja")}
-          />          
           <img
-            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copovermelhop.png"
-            alt="Copo pequeno vermelho"
-            onClick={() => setCorSelecionada("vermelho")}
-           />           
-           <img
-            src="https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copoamarelop.png"
-            alt="Copo pequeno amarelo"
-            onClick={() => setCorSelecionada("amarelo")}
+            src={coposPequenos.laranja}
+            alt="Copo pequeno laranja"
+            onClick={() =>{ setCorSelecionada("laranja");
+            tocarSom();
+            }}
           />
-         </div>
+          <img
+            src={coposPequenos.vermelho}
+            alt="Copo pequeno vermelho"
+            onClick={() => {setCorSelecionada("vermelho");
+            tocarSom();
+            }}
+          />
+          <img
+            src={coposPequenos.amarelo}
+            alt="Copo pequeno amarelo"
+            onClick={() => {setCorSelecionada("amarelo");
+            tocarSom();
+            }}
+          />
+        </div>
       </section>
-      <Section>        
-        <Copo
-          src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copo${corSelecionada}g.png`}
-          alt={`Copo ${corSelecionada} grande`}
-        />
+      <Section>
+       
         <img
-          src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/ellipse${corSelecionada}.png`}
+          src={elipses[corSelecionada]}
           alt={`Elipse ${corSelecionada}`}
         />
-        </Section>
+       
+        <Copo
+          src={coposGrandes[corSelecionada]}
+          alt={`Copo ${corSelecionada} grande`}
+        />
+      </Section>
     </MainStyle>
   );
 }
