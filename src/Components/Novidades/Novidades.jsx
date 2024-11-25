@@ -12,7 +12,7 @@ export default function Novidades() {
             <Button>SAIBA MAIS</Button>
             </Div>
             <div>
-                <img src= "src/assets/image/grao.png" alt="Grão de café" />
+                <img src= "../../assets/image/grao.png" alt="Grão de café" />
             </div>
             </Section>
     )
