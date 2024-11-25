@@ -2,7 +2,8 @@ import { useState } from "react";
 import { MainStyle, Copo, Section } from "./style";
 
 export default function Home() {
-  const [corSelecionada, setCorSelecionada] = useState("laranja");
+  const [corSelecionada, setCorSelecionada] = useState ("laranja");
+  
   return (
     <MainStyle>
       <section>
@@ -40,9 +41,9 @@ export default function Home() {
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/copo${corSelecionada}g.png`}
           alt={`Copo ${corSelecionada} grande`}
         />
-        <elipse
+        <img
           src={`https://raw.githubusercontent.com/desireeferreira/Starbucks/main/src/assets/image/ellipse${corSelecionada}.png`}
-          alt={`elipse ${corSelecionada}`}
+          alt={`Elipse ${corSelecionada}`}
         />
         </Section>
     </MainStyle>

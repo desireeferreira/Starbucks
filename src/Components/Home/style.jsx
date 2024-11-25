@@ -83,7 +83,7 @@ export const Copo = styled.img`
   }
 `;
 
-export const elipse = styled.img`
+export const Elipse = styled.img`
   position: absolute;
   width: 450px;
   z-index: 1; /* Colocando a elipse atrás do copo */
