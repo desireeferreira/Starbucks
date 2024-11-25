@@ -1,4 +1,4 @@
-import loja from "../../assets/image/loja.png"
+import loja from "../../assets/image/grao.png"
 import { Section, Div, Button } from "./style";
 
 export default function Novidades() {
