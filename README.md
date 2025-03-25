@@ -33,7 +33,7 @@ Veja a aplicação em funcionamento: [Starbucks Clone](#)
 
 - **Seleção de Diferentes Níveis de Torra**: Os usuários podem interagir e escolher diferentes níveis de torra do café, com feedback visual.
 - **Imagens Dinâmicas de Copos e Elipses**: As imagens dos copos e elipses são animadas e reativas, criando uma experiência mais dinâmica.
-- **Áudio ao Clicar em Interações**: Sons realistas são tocados ao selecionar itens, como café e torra.
+- **Áudio ao Clicar em Interações**: Sons realistas são tocados ao selecionar itens como o copo.
 - **Botão de Navegação**: Navegação fácil para acessar mais informações sobre os produtos.
 
 ## 🌟 Próximas Melhorias
